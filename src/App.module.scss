@@ -1,0 +1,9 @@
+.appContainer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: 
+    'dictionary headerContainer headerContainer'
+    'dictionary container navBar';
+    grid-template-rows: 20vh 80vh;
+    grid-template-columns: 20vw 60vw 20vw;
+}

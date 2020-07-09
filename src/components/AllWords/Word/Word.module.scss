@@ -1,0 +1,18 @@
+.wordBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    padding: 2px;
+    color: #000;
+    text-decoration: none;
+    transition: all ease-out 0.1s;
+    &:hover {
+        background-color: rgba(115, 190, 214, 0.62);
+        cursor: pointer;
+    }
+    p {
+        margin: 2px 0;
+        font-size: 22px;
+        display: inline-block;
+    }
+}

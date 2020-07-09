@@ -1,0 +1,29 @@
+.paginatorBox {
+    .paginator {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        padding: 10px 0;
+        width: 95%;
+        button {
+            background: none;
+            border: none;
+            img {
+                width: 80%;
+            }
+        }
+        span {
+            font-size: 22px;
+        }
+    }
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.opacity {
+    opacity: 0.5;
+}

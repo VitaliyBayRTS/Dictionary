@@ -1,0 +1,86 @@
+.wordSettingsBox {
+    .mainSection {
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 10px 15px;
+        background: rgba(255, 255, 255, 0.58);
+        border-radius: 10px;
+        .word {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: left;
+            p {
+                margin: 0 0 10px;
+            }
+        }
+        textarea {
+            padding: 5px 10px;
+            width: 100%;
+            height: 80px;
+            font-size: 17px;
+            box-sizing: border-box;
+        }
+        .buttonSection {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            button, a {
+                text-decoration: none;
+                background: transparent;
+                border: none;
+                font-size: 20px;
+                color: #19558C;
+                &:hover {
+                    color: darken($color: #19558C, $amount: 10%)
+                }
+            }
+        }
+    }
+    .yesNoSection {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url('../../common/img/yesNoBg.png') no-repeat;
+        background-size: cover;
+        border: 1px solid #2E2E2E;
+        border-radius: 10px;
+        button {
+            background: transparent;
+            padding: 50px;
+            border: none;
+            font-size: 25px;
+            font-weight: 600;
+            color: #2F4E2C;
+            &:last-child {
+                border-left: 3px solid #000;
+            }
+        }
+    }
+    .finalSection {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        background: url('../../common/img/yesNoBg.png') no-repeat;
+        background-size: cover;
+        border: 1px solid #2E2E2E;
+        border-radius: 10px;
+        span {
+            font-size: 25px;
+            font-weight: 600;
+            color: #2F4E2C;
+        }
+    }
+}
+
+.displayIB {
+    display: inline-block;
+}
+
+.displayNone {
+    display: none;
+}

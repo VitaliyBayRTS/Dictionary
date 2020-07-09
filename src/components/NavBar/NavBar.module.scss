@@ -1,0 +1,33 @@
+.navBar {
+    grid-area: navBar;
+    .navBarContainer {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 16% 16% 16% 16% 16% 16% ;
+        justify-content: center;
+        .navBarItem {
+            border-radius: 50%;
+            transition: box-shadow 500ms;
+            box-shadow: none;
+            :hover {
+                box-shadow: 0px 2px 11px 0px rgba(49,232,39,1);
+            }
+            img {
+                border-radius: 50%;
+                height: 50%;
+            }
+        }
+        .search {
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .add {
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .all {
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    }
+}

@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import s from './App.module.scss';
+import Dictionary from './components/Dictionary/Dictionary';
+import Header from './components/Header/Header';
+import Container from './components/Container/Container';
+import NavBar from './components/NavBar/NavBar';
+import foto from './common/img/main_bg.png';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component<any> {
+ 
+
+  render() {
+    return (<BrowserRouter>
+      <div className={s.appContainer} style={{ backgroundImage: `url(${foto})`}}>
+        <Dictionary />
+        <Header />
+        <Container />
+        <NavBar />
+      </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

@@ -1,0 +1,19 @@
+.searchBox {
+    position: relative;
+    padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    input {
+        position: relative;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        background: #E2DFDF;
+        border: 1px solid #2E2E2E;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .wordSection {
+        padding: 0 10px;
+    }
+}
