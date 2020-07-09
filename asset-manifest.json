@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Dictionary/static/css/main.b537297d.chunk.css",
+    "main.js": "/Dictionary/static/js/main.0010bc27.chunk.js",
+    "main.js.map": "/Dictionary/static/js/main.0010bc27.chunk.js.map",
+    "runtime-main.js": "/Dictionary/static/js/runtime-main.607ef3ff.js",
+    "runtime-main.js.map": "/Dictionary/static/js/runtime-main.607ef3ff.js.map",
+    "static/js/2.bc1ce2b9.chunk.js": "/Dictionary/static/js/2.bc1ce2b9.chunk.js",
+    "static/js/2.bc1ce2b9.chunk.js.map": "/Dictionary/static/js/2.bc1ce2b9.chunk.js.map",
+    "index.html": "/Dictionary/index.html",
+    "precache-manifest.91d90fa2aa4e7d3d6534e944d4d3db53.js": "/Dictionary/precache-manifest.91d90fa2aa4e7d3d6534e944d4d3db53.js",
+    "service-worker.js": "/Dictionary/service-worker.js",
+    "static/css/main.b537297d.chunk.css.map": "/Dictionary/static/css/main.b537297d.chunk.css.map",
+    "static/js/2.bc1ce2b9.chunk.js.LICENSE.txt": "/Dictionary/static/js/2.bc1ce2b9.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/Dictionary/static/media/logo.e31f3339.png",
+    "static/media/main_bg.png": "/Dictionary/static/media/main_bg.4f0bf0b1.png",
+    "static/media/AddWord.module.scss": "/Dictionary/static/media/yesNoBg.c2976018.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.607ef3ff.js",
+    "static/js/2.bc1ce2b9.chunk.js",
+    "static/css/main.b537297d.chunk.css",
+    "static/js/main.0010bc27.chunk.js"
+  ]
+}
