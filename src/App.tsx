@@ -5,20 +5,20 @@ import Header from './components/Header/Header';
 import Container from './components/Container/Container';
 import NavBar from './components/NavBar/NavBar';
 import foto from './common/img/main_bg.png';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 class App extends React.Component<any> {
  
 
   render() {
-    return (<BrowserRouter>
+    return (<HashRouter>
       <div className={s.appContainer} style={{ backgroundImage: `url(${foto})`}}>
         <Dictionary />
         <Header />
         <Container />
         <NavBar />
       </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
