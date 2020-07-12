@@ -3,7 +3,7 @@ import Axios from 'axios';
 
 let instance = Axios.create({
     withCredentials: true,
-    baseURL: "https://serene-wave-29540.herokuapp.com/dictionary/", 
+    baseURL: "https://serene-wave-29540.herokuapp.com/dictionary/"
 })
 
 export type getWordsType = {
