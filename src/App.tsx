@@ -12,7 +12,8 @@ class App extends React.Component<any> {
 
   render() {
     return (<HashRouter>
-      <div className={s.appContainer} style={{ backgroundImage: `url(${foto})`}}>
+      {/* <div className={s.appContainer} style={{ backgroundImage: `url(${foto})`}}> */}
+      <div className={s.appContainer}>
         <Dictionary />
         <Header />
         <Container />

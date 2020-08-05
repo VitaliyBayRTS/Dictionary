@@ -4,6 +4,7 @@
   grid-template-areas: 
     'dictionary headerContainer headerContainer'
     'dictionary container navBar';
-    grid-template-rows: 20vh 80vh;
-    grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 19vh 79vh;
+  grid-template-columns: 20vw 60vw 18vw;
+  background-size: cover;
 }
