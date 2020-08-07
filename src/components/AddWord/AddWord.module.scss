@@ -4,12 +4,9 @@ textarea {
 }
 section {
     .addWordBox {
-        // position: relative;
-        div {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        display: grid;
+        align-items: center;
+        .wordBox, .meaningBox, .wordMeaningBox {
             width: 100%;
             background: rgba(255, 255, 255, 0.58);
             border-radius: 10px;
