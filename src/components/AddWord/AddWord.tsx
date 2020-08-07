@@ -40,37 +40,38 @@ let AddWord: FunctionComponent<AddWordProps> = (props) => {
         changeIsAllCorrect(true)
     }
 
-    return (<div className={s.addWordBox}>
-        <div className={cn(s.wordBox, {
-            [s.displayNone]: isWordSet
-        })}>
-            <input type="text" ref={wordRef}/>
-            <button onClick={wordHandleClick}>Siguiente</button> 
+    return (<section>
+        <div className={s.addWordBox}>
+            <div className={cn(s.wordBox, {
+                [s.displayNone]: isWordSet
+            })}>
+                <input type="text" ref={wordRef}/>
+                <button onClick={wordHandleClick}>Siguiente</button> 
+            </div>
+
+            <div className={cn(s.meaningBox, {
+                [s.displayNone]: !isWordSet || isMeaningSet
+            })}>
+                <textarea cols={30} rows={10} ref={meaningRef}></textarea>
+                <button onClick={() => changeIsWordSet(false)}>Volver</button>
+                <button onClick={meaningHandleClick}>Guardar</button>
+            </div>
+
+            <div className={cn(s.wordMeaningBox, {
+                [s.displayNone]: !isWordSet || !isMeaningSet || isAllCorrect
+            })}>
+                <textarea cols={30} rows={10} value={value} onChange={() => {}}></textarea>
+                <button onClick={() => changeIsMeaningSet(false)}>Volver</button>
+                <button onClick={addWord}>Terminar </button>
+            </div> 
+
+            <div className={cn(s.savedSection, {
+                [s.displayNone]: !isWordSet || !isMeaningSet || !isAllCorrect
+            })}>
+                <span>{props.isWordSaved ? "Guardado" : "Guardando"}</span>
+            </div>
         </div>
-
-        <div className={cn(s.meaningBox, {
-            [s.displayNone]: !isWordSet || isMeaningSet
-        })}>
-            <textarea cols={30} rows={10} ref={meaningRef}></textarea>
-            <button onClick={() => changeIsWordSet(false)}>Volver</button>
-            <button onClick={meaningHandleClick}>Guardar</button>
-        </div>
-
-        <div className={cn(s.wordMeaningBox, {
-            [s.displayNone]: !isWordSet || !isMeaningSet || isAllCorrect
-        })}>
-            <textarea cols={30} rows={10} value={value} onChange={() => {}}></textarea>
-            <button onClick={() => changeIsMeaningSet(false)}>Volver</button>
-            <button onClick={addWord}>Terminar </button>
-        </div> 
-
-        <div className={cn(s.savedSection, {
-            [s.displayNone]: !isWordSet || !isMeaningSet || !isAllCorrect
-        })}>
-            <span>{props.isWordSaved ? "Guardado" : "Guardando"}</span>
-        </div>
-
-    </div>)
+    </section>)
 }
 
 export default AddWord;
