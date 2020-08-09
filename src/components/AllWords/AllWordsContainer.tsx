@@ -5,6 +5,7 @@ import AllWords from "./AllWords";
 import { getWordsThunk, setCurrentPageThunk } from '../../redux/allWordsReducer';
 import { wordDataType } from '../../redux/allWordsReducer';
 import { stateType } from '../../redux/reduxStore';
+import Preloader from "../Preloader/Preloader";
 
 
 type mapStateToPropsType = {
@@ -21,20 +22,20 @@ type mapDispatchToPropsType = {
 type MyProps = mapStateToPropsType & mapDispatchToPropsType
 
 class AllWordsContainer extends React.Component<MyProps> {
-
     componentDidMount() {
         this.props.getWordsThunk(this.props.currentPage);
     }
 
     maxPageNumber() {
-        const result = Math.ceil(this.props.totalWordsCount / this.props.pageWordsCount)
-        return result
+        const result = Math.ceil(this.props.totalWordsCount / this.props.pageWordsCount);
+        return result;
     }
 
+
     render() {
-        // if(this.props.totalWordsCount == 0) {
-        //     return <div>Loading...</div>
-        // }
+        if(this.props.wordData.length < 1) {
+            return <Preloader/>
+        }
         return <AllWords wordData={this.props.wordData} 
                     getWordsThunk={this.props.getWordsThunk}
                     currentPage={this.props.currentPage}

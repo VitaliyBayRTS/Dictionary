@@ -4,14 +4,14 @@ import cn from "classnames";
 import prevImg from '../../common/img/allWords/prev.png';
 import nextImg from '../../common/img/allWords/next.png';
 
-interface AllWordsProps {
+interface PaginatorProps {
     getWordsThunk: any,
     currentPage: number,
     maxPageNumber: number,
     setCurrentPageThunk: (page: number) => void
 }
 
-let Paginator: FunctionComponent<AllWordsProps> = (props) => {
+let Paginator: FunctionComponent<PaginatorProps> = (props) => {
     
     let getWords = (page: number) => {
         let nextPage = props.currentPage + page;

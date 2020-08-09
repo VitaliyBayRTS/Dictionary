@@ -1,8 +1,6 @@
 .wordSettingsBox {
     .mainSection {
-        position: absolute;
-        top: 35%;
-        transform: translateY(-50%);
+        position: relative;
         width: 100%;
         padding: 10px 15px;
         background: rgba(255, 255, 255, 0.58);
@@ -38,18 +36,20 @@
             }
         }
     }
-    .yesNoSection {
+    .yesNoSection, .finalSection {
         position: absolute;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: url('../../common/img/yesNoBg.png') no-repeat;
+        border: 2.5px solid #2E2E2E;
+        border-radius: 20px;
+    }
+    .yesNoSection {
+        background: url('../../common/img/yesNoBg.png') 0 0 no-repeat;
         background-size: cover;
-        border: 1px solid #2E2E2E;
-        border-radius: 10px;
         button {
             background: transparent;
-            padding: 50px;
+            padding: 70px 60px;
             border: none;
             font-size: 25px;
             font-weight: 600;
@@ -60,12 +60,8 @@
         }
     }
     .finalSection {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         padding: 50px;
-        background: url('../../common/img/yesNoBg.png') no-repeat;
+        background: url('../../common/img/yesNoBg.png') 0 0 no-repeat;
         background-size: cover;
         border: 1px solid #2E2E2E;
         border-radius: 10px;

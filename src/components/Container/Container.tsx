@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import AllWordContainer from "../AllWords/AllWordsContainer";
 import WordSettingsContainer from "../WordSettings/WordSettingsContainer";
 import AddWordContainer from "../AddWord/AddWordContainer";
+import Preloader from "../Preloader/Preloader";
 interface ContainerProps {
 
 }

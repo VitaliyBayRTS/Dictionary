@@ -51,7 +51,7 @@ let WordSettings: FunctionComponent<ContainerProps> = (props) => {
                 </div>}
                 <div className={s.buttonSection}>
                     <button onClick={() => setYesNoValue(true)}>Eliminar</button>
-                    <button>Actualizar</button>
+                    <button onClick={() => setEditMode(!editMode)}>Actualizar</button>
                     <NavLink to="/search">Volver</NavLink>
                 </div>
             </section>
