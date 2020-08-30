@@ -16,8 +16,11 @@ let Word: FunctionComponent<AllWordsProps> = (props) => {
     }
 
     return (<NavLink to='/wordSettings' onClick={() => submitData()} className={s.wordBox}>
-        <p> {props.index}. {props.wordData.word} - &nbsp;</p>
-        <p>{props.wordData.shortMeaning}</p>
+        <p>{props.index}. <b>{props.wordData.word.toLowerCase().charAt(0).toUpperCase() + 
+            props.wordData.word.slice(1)} -</b> &nbsp;
+            <p>{props.wordData.shortMeaning}</p>
+        </p>
+        
     </NavLink>)
 }
 

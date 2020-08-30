@@ -2,7 +2,6 @@ import React, { FunctionComponent, useState, useRef } from "react";
 import s from './AddWord.module.scss';
 import cn from 'classnames';
 import { wordInfoType } from "../../api/dal";
-import { addWordThunk } from "../../redux/addWordReducer";
 interface AddWordProps {
     addWordThunk: (wordInfo: wordInfoType) => void,
     isWordSaved: boolean
@@ -38,6 +37,21 @@ let AddWord: FunctionComponent<AddWordProps> = (props) => {
         let wordInfo = {word, meaning}
         props.addWordThunk(wordInfo)
         changeIsAllCorrect(true)
+        
+    }
+
+    let clearAllValue = () => {
+        if(wordRef.current?.value && meaningRef.current?.value) {
+            wordRef.current.value = ''
+            meaningRef.current.value = ''
+        }
+        changeIsWordSet(false)
+        changeIsMeaningSet(false)
+        changeIsAllCorrect(false)
+    }
+
+    if(props.isWordSaved) {
+        window.setTimeout(clearAllValue, 300)
     }
 
     return (<section>
@@ -62,7 +76,7 @@ let AddWord: FunctionComponent<AddWordProps> = (props) => {
             })}>
                 <textarea cols={30} rows={10} value={value} onChange={() => {}}></textarea>
                 <button onClick={() => changeIsMeaningSet(false)}>Volver</button>
-                <button onClick={addWord}>Terminar </button>
+                <button onClick={addWord}>Terminar</button>
             </div> 
 
             <div className={cn(s.savedSection, {
