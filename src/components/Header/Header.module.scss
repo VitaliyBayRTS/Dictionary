@@ -28,3 +28,15 @@ header {
       font-weight: 200;
     }
 }
+
+@media(max-width: 400px) {
+  header {
+      img {
+        width: 100%;
+      }
+      span {
+        text-align: center;
+        font-size: 22px;
+      }
+  }
+}

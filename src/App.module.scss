@@ -8,3 +8,17 @@
   grid-template-columns: 20vw 60vw 18vw;
   background-size: cover;
 }
+
+// @media(max-width: 400px) {
+//   .appContainer {
+//     box-sizing: border-box;
+//     display: grid;
+//     grid-template-areas: 
+//       'dictionary headerContainer headerContainer'
+//       'dictionary container container'
+//       'dictionary navBar navBar';
+//     grid-template-rows: 19vh 49vh 30vh;
+//     grid-template-columns: 20vw 60vw 18vw;
+//     background-size: cover;
+//   }
+// }

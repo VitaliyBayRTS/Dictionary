@@ -24,11 +24,14 @@
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: space-between;
+            text-align: center;
             button, a {
+                padding: 0;
+                margin: 0;
                 text-decoration: none;
                 background: transparent;
                 border: none;
-                font-size: 20px;
+                font-size: 18px;
                 color: #19558C;
                 &:hover {
                     color: darken($color: #19558C, $amount: 10%)
@@ -45,6 +48,9 @@
         border-radius: 20px;
     }
     .yesNoSection {
+        display: grid;
+        justify-self: center;
+        grid-template-columns: auto auto;
         background: url('../../common/img/yesNoBg.png') 0 0 no-repeat;
         background-size: cover;
         button {
@@ -78,5 +84,16 @@
 }
 
 .displayNone {
-    display: none;
+    display: none !important;
+}
+
+
+@media(max-width: 400px) {
+    .wordSettingsBox {
+        .yesNoSection {
+            button {
+                padding: 45px 35px;
+            }
+        }
+    }
 }

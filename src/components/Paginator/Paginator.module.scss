@@ -26,3 +26,13 @@
 .opacity {
     opacity: 0.5;
 }
+
+@media(max-width: 400px) {
+    .paginatorBox {
+        .paginator {
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
