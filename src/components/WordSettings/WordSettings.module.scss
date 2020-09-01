@@ -90,7 +90,14 @@
 
 @media(max-width: 400px) {
     .wordSettingsBox {
-        .yesNoSection {
+        .mainSection {
+            width: 88%;
+        }
+        .yesNoSection, .finalSection {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -150%);
             button {
                 padding: 45px 35px;
             }
